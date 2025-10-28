@@ -10,7 +10,7 @@
 - **API**: https://147x402.xyz/health
 - **Tutorial**: https://147x402.xyz/#tutorial
 - **Documentation**: https://147x402.xyz/#documentation
-- **Buy Token**: https://pump.fun/
+- **Buy Token**: https://pump.fun/coin/Gnk1PidvzuEB98vLHC5tim14w9q8fREHCHGL35Xqpump
 
 ## 💡 The Problem We Solve
 

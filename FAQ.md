@@ -142,7 +142,7 @@ Absolutely! 147x402 is perfect for:
 - **Use Cases**: Payment fees, governance, staking
 
 ### Where can I buy X402?
-- **Primary**: [Pump.fun](https://pump.fun/)
+- **Primary**: [Pump.fun](https://pump.fun/coin/Gnk1PidvzuEB98vLHC5tim14w9q8fREHCHGL35Xqpump)
 - **Secondary**: Coming to major exchanges
 
 ### What can I do with X402?

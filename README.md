@@ -7,7 +7,7 @@
 **The Future of Programmatic Payments on Solana**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-147x402.xyz-blue?style=for-the-badge&logo=web)](https://147x402.xyz/)
-[![Buy Token](https://img.shields.io/badge/Buy%20Token-Pump.fun-green?style=for-the-badge&logo=bitcoin)](https://pump.fun/)
+[![Buy Token](https://img.shields.io/badge/Buy%20Token-Pump.fun-green?style=for-the-badge&logo=bitcoin)](https://pump.fun/coin/Gnk1PidvzuEB98vLHC5tim14w9q8fREHCHGL35Xqpump)
 [![API Status](https://img.shields.io/badge/API-Online-brightgreen?style=for-the-badge)](https://147x402.xyz/health)
 
 </div>
@@ -331,6 +331,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for the future of programmatic payments**
 
-[Website](https://147x402.xyz/) • [Documentation](https://147x402.xyz/#documentation) • [Tutorial](https://147x402.xyz/#tutorial) • [Buy Token](https://pump.fun/)
+[Website](https://147x402.xyz/) • [Documentation](https://147x402.xyz/#documentation) • [Tutorial](https://147x402.xyz/#tutorial) • [Buy Token](https://pump.fun/coin/Gnk1PidvzuEB98vLHC5tim14w9q8fREHCHGL35Xqpump)
 
 </div>
