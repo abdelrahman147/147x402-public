@@ -83,7 +83,7 @@ POST https://147x402.xyz/payment/request
 Content-Type: application/json
 
 {
-  "seller": "6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG",
+  "seller": "YOUR_WALLET_ADDRESS",
   "amount": 0.1,
   "token": "USDC"
 }
@@ -208,7 +208,7 @@ curl https://147x402.xyz/health
 # Create payment request
 curl -X POST https://147x402.xyz/payment/request \
   -H "Content-Type: application/json" \
-  -d '{"seller": "6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG", "amount": 0.01, "token": "USDC"}'
+  -d '{"seller": "YOUR_WALLET_ADDRESS", "amount": 0.01, "token": "USDC"}'
 ```
 
 ### Dashboard

@@ -26,7 +26,7 @@ async function makePayment() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        seller: '6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG',
+        seller: 'YOUR_WALLET_ADDRESS',
         amount: 0.1,
         token: 'USDC'
       })
@@ -37,7 +37,7 @@ async function makePayment() {
     
     // 2. Simulate sending Solana transaction
     console.log('Sending Solana transaction...');
-    const signature = 'Aw2YHcoEm2rg78PNGvFxFhj5oYXkmxqsc6PAiQwLXNxyen4528dzRnA2kbHuVUNCh1hHepzhX9kFiiwuHcVu8rm';
+    const signature = 'YOUR_TRANSACTION_SIGNATURE';
     
     // 3. Verify payment
     console.log('Verifying payment...');
@@ -76,7 +76,7 @@ def make_payment():
         # 1. Create payment request
         print("Creating payment request...")
         payment_data = {
-            "seller": "6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG",
+            "seller": "YOUR_WALLET_ADDRESS",
             "amount": 0.1,
             "token": "USDC"
         }
@@ -92,7 +92,7 @@ def make_payment():
         
         # 2. Simulate sending Solana transaction
         print("Sending Solana transaction...")
-        signature = "Aw2YHcoEm2rg78PNGvFxFhj5oYXkmxqsc6PAiQwLXNxyen4528dzRnA2kbHuVUNCh1hHepzhX9kFiiwuHcVu8rm"
+        signature = "YOUR_TRANSACTION_SIGNATURE"
         
         # 3. Verify payment
         print("Verifying payment...")
@@ -255,7 +255,7 @@ class AIAgent {
   async sendSolanaTransaction(payment) {
     // Implement your Solana transaction logic here
     // This is a simplified example
-    return 'Aw2YHcoEm2rg78PNGvFxFhj5oYXkmxqsc6PAiQwLXNxyen4528dzRnA2kbHuVUNCh1hHepzhX9kFiiwuHcVu8rm';
+    return 'YOUR_TRANSACTION_SIGNATURE';
   }
   
   async verifyPayment(paymentId, signature) {
@@ -288,7 +288,7 @@ class AIAgent {
   
   extractSellerFromUrl(apiUrl) {
     // Extract seller wallet from API URL or configuration
-    return '6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG';
+    return 'YOUR_WALLET_ADDRESS';
   }
 }
 
@@ -389,7 +389,7 @@ class MicropaymentSystem {
   
   async sendSolanaTransaction(payment) {
     // Implement your Solana transaction logic
-    return 'Aw2YHcoEm2rg78PNGvFxFhj5oYXkmxqsc6PAiQwLXNxyen4528dzRnA2kbHuVUNCh1hHepzhX9kFiiwuHcVu8rm';
+    return 'YOUR_TRANSACTION_SIGNATURE';
   }
 }
 
@@ -537,7 +537,7 @@ async function handlePaymentWithRetry(paymentData, maxRetries = 3) {
 
 // Usage with error handling
 handlePaymentWithRetry({
-  seller: '6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG',
+  seller: 'YOUR_WALLET_ADDRESS',
   amount: 0.1,
   token: 'USDC'
 })

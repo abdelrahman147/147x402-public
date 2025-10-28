@@ -61,7 +61,7 @@ Content-Type: application/json
     "amount": 0.1,
     "token": "USDC",
     "tokenMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-    "to": "6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG",
+    "to": "YOUR_WALLET_ADDRESS",
     "memo": "147x402:payment_123"
   }
 }
@@ -88,7 +88,7 @@ Content-Type: application/json
 {
   "id": "payment_123",
   "status": "verified",
-  "transactionSignature": "Aw2YHcoEm2rg78PNGvFxFhj5oYXkmxqsc6PAiQwLXNxyen4528dzRnA2kbHuVUNCh1hHepzhX9kFiiwuHcVu8rm",
+  "transactionSignature": "YOUR_TRANSACTION_SIGNATURE",
   "verifiedAt": 1698765432000
 }
 ```
@@ -105,7 +105,7 @@ GET /payment/{paymentId}
 {
   "id": "payment_123",
   "status": "verified",
-  "transactionSignature": "Aw2YHcoEm2rg78PNGvFxFhj5oYXkmxqsc6PAiQwLXNxyen4528dzRnA2kbHuVUNCh1hHepzhX9kFiiwuHcVu8rm",
+  "transactionSignature": "YOUR_TRANSACTION_SIGNATURE",
   "verifiedAt": 1698765432000
 }
 ```
@@ -242,7 +242,7 @@ const payment = await fetch('https://147x402.xyz/payment/request', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
-    seller: '6MM2m6jtH6VX6UYXv6BCwnZGTdt2JnmiNnLy6uQKkBbG',
+    seller: 'YOUR_WALLET_ADDRESS',
     amount: 0.1,
     token: 'USDC'
   })
