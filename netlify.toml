@@ -1,0 +1,15 @@
+[build]
+  publish = "site"
+  command = ""
+
+[[redirects]]
+  from = "/api"
+  to = "/api.html"
+  status = 200
+
+[[redirects]]
+  from = "/docs"
+  to = "/docs.html"
+  status = 200
+
+
