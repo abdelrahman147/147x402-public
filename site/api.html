@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/fa.css">
+    <script type="module" src="assets/js/model-bg.js"></script>
+    <script src="assets/js/fallback-bg.js"></script>
+    <title>147x402 API</title>
+    <style>
+      html, body { background: #121417; color: #fff; margin: 0; }
+      a { color: #9ecbff; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 40px 16px; }
+      .heading { text-transform: uppercase; font-weight: 900; letter-spacing: -2px; font-size: 44px; text-align: center; margin: 24px 0; }
+      .card { border: 1px solid rgba(255,255,255,.1); background: rgba(0,0,0,.35); padding: 20px; }
+      .grid { display: grid; gap: 16px; }
+      @media (min-width: 1024px){ .grid-3 { grid-template-columns: 1fr 2fr; } }
+      pre { background: rgba(0,0,0,.6); padding: 12px; overflow:auto; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <a href="index.html" style="font-weight:900; font-size:28px; text-decoration:none;">147x402</a>
+    </header>
+    <main class="container">
+      <h1 class="heading">147x402 API</h1>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 class="text-xl font-semibold mb-3">Base URL</h3>
+          <code>https://147.402</code>
+          <h3 class="text-xl font-semibold mb-3" style="margin-top:16px">Payment</h3>
+          <ul class="text-gray-300 text-sm">
+            <li>Protocol: X402</li>
+            <li>Networks: Solana, Base</li>
+            <li>Price: $0.0004/request</li>
+            <li>Facilitator: https://facilitator.payai.network</li>
+          </ul>
+          <h3 class="text-xl font-semibold mb-3" style="margin-top:16px">Prefixes</h3>
+          <ul class="text-sm">
+            <li>/ — Solana (default)</li>
+            <li>/solana/* — force Solana</li>
+            <li>/base/* — force Base</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="text-2xl font-bold mb-4">Endpoints</h3>
+          <div class="grid" style="gap:24px">
+            <div>
+              <h4 class="font-semibold">GET /token/&lt;address&gt;</h4>
+              <p class="text-gray-400 text-sm">Detailed token info.</p>
+              <pre>curl "https://147.402/token/&lt;address&gt;"</pre>
+            </div>
+            <div>
+              <h4 class="font-semibold">POST /balances</h4>
+              <p class="text-gray-400 text-sm">Wallet balances across networks.</p>
+              <pre>curl -X POST "https://147.402/balances" \
+-H "Content-Type: application/json" \
+-d '{"walletAddress":"0x742d35...","networks":[1,56,137]}'</pre>
+            </div>
+            <div>
+              <h4 class="font-semibold">GET /networks</h4>
+              <pre>curl "https://147.402/networks"</pre>
+            </div>
+            <div>
+              <h4 class="font-semibold">GET /tokens/search</h4>
+              <pre>curl "https://147.402/tokens/search?q=bitcoin&amp;limit=10"</pre>
+            </div>
+            <div>
+              <h4 class="font-semibold">GET /bars</h4>
+              <pre>curl "https://147.402/bars?symbol=BTC&amp;from=1640995200&amp;to=1641081600&amp;resolution=1D"</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  </html>
+
+

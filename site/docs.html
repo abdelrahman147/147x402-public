@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/fa.css">
+    <script type="module" src="assets/js/model-bg.js"></script>
+    <script src="assets/js/fallback-bg.js"></script>
+    <title>147x402 Docs</title>
+    <style>
+      html, body { background: #121417; color: #fff; margin: 0; }
+      a { color: #9ecbff; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 40px 16px; }
+      .heading { text-transform: uppercase; font-weight: 900; letter-spacing: -2px; font-size: 44px; text-align: center; margin: 24px 0; }
+      .card { border: 1px solid rgba(255,255,255,.1); background: rgba(0,0,0,.35); padding: 20px; }
+      pre { background: rgba(0,0,0,.6); padding: 12px; overflow:auto; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <a href="index.html" style="font-weight:900; font-size:28px; text-decoration:none;">147x402</a>
+    </header>
+    <main class="container">
+      <h1 class="heading">147x402 Documentation</h1>
+      <div class="card" style="margin-bottom:16px">
+        <h3 class="text-2xl font-bold mb-2">Quickstart</h3>
+        <div style="display:grid; gap:16px; grid-template-columns:1fr;">
+          <div>
+            <h4 class="font-semibold mb-1">JavaScript</h4>
+            <pre>fetch('https://147.402/networks')
+  .then(r => r.json())
+  .then(console.log)</pre>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Python</h4>
+            <pre>import requests
+print(requests.get('https://147.402/networks').json())</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px">
+        <h3 class="text-2xl font-bold mb-2">Authentication & Payment</h3>
+        <p class="text-gray-300">All requests are paid via the X402 protocol with automatic processing on Base or Solana. Price: $0.0004/request.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="text-2xl font-bold mb-2">Errors</h3>
+        <ul class="text-gray-300">
+          <li>400 – Bad Request</li>
+          <li>429 – Rate Limit Exceeded (retryAfter)</li>
+          <li>500 – Internal Server Error</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+  </html>
+
+
