@@ -18,7 +18,7 @@
     <script src="assets/js/chunk3.js" async></script>
     <script src="assets/js/chunk4.js" async></script>
     <script src="assets/js/page.js" async></script>
-    <title>Cortex - The intelligent API that provides enriched blockchain data for AI agents</title>
+    <title>147x402 - The intelligent API that provides enriched blockchain data for AI agents</title>
     <meta name="description" content="Real-time, enriched blockchain data for 32 million+ tokens on 90+ networks with X402 protocol support">
     <script src="assets/js/polyfills.js" crossorigin nomodule></script>
     <style>
@@ -36,7 +36,7 @@
       <header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center h-20">
-            <a href="#" class="text-4xl font-black tracking-tight uppercase hover:scale-105 transition-transform duration-300">Cortex</a>
+            <a href="#" class="text-4xl font-black tracking-tight uppercase hover:scale-105 transition-transform duration-300">147x402</a>
             <nav class="hidden lg:flex">
               <ul class="flex items-center space-x-8">
                 <li><a href="api.html" class="font-medium uppercase relative group text-white hover:text-gray-400 transition-colors duration-300">api<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-400 transition-all duration-500 group-hover:w-full"></span></a></li>
@@ -50,7 +50,7 @@
           </div>
         </div>
       </header>
-      <h1 class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-9xl lg:text-[160px] font-bold uppercase tracking-[-4px] z-[-1] transition-opacity duration-500" style="opacity: 0;">Cortex</h1>
+      <h1 class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-9xl lg:text-[160px] font-bold uppercase tracking-[-4px] z-[-1] transition-opacity duration-500" style="opacity: 0;">147x402</h1>
       <section class="min-h-screen flex items-center justify-center opacity-0 transition-opacity duration-500" style="opacity: 1;">
         <div class="middle-desc-mobile lg:hidden text-center z-10">
           <h1 class="text-6xl font-black uppercase tracking-[-3px] mb-6 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent">CORTEX</h1>
@@ -131,7 +131,7 @@ The 147x402 API is a powerful tool that provides comprehensive blockchain data a
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center">
-            <h2 class="text-6xl lg:text-8xl font-black uppercase tracking-[-4px] mb-8 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent">Why We Built Cortex</h2>
+            <h2 class="text-6xl lg:text-8xl font-black uppercase tracking-[-4px] mb-8 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent">Why We Built 147x402</h2>
             <p class="text-xl lg:text-2xl font-medium text-gray-300 max-w-3xl mx-auto leading-relaxed opacity-90 hover:opacity-100 transition-opacity duration-300 uppercase tracking-wide">Current offerings are difficult to access for LLMs, require subscriptions, custom integrations, and complex setup processes. <br></p>
             <div class="my-8 flex justify-center"><div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div></div>
             <p class="text-xl lg:text-2xl font-medium text-gray-300 max-w-3xl mx-auto leading-relaxed opacity-90 hover:opacity-100 transition-opacity duration-300 uppercase tracking-wide mb-16">Yet LLMs need access to blockchain data to be able to reason about crypto and transact on-chain.</p>
@@ -238,11 +238,13 @@ The 147x402 API is a powerful tool that provides comprehensive blockchain data a
             if (brandH1) brandH1.textContent = BRAND;
           } catch (e) { /* no-op */ }
         }
-        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        const start = () => {
           run();
-        } else {
-          document.addEventListener('DOMContentLoaded', run);
-        }
+          const mo = new MutationObserver(() => run());
+          mo.observe(document.body, { childList: true, subtree: true, characterData: true });
+        };
+        if (document.readyState === 'complete' || document.readyState === 'interactive') start();
+        else document.addEventListener('DOMContentLoaded', start);
       })();
     </script>
   </body>
